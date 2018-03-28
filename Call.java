@@ -1,3 +1,4 @@
+//関数を呼び出す
 public class Call{
 
   public static void main(String[] args){
