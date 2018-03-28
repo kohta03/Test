@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8">
+  <title>スロット</title>
+  <link rel = "stylesheet" href = "slot.css">
+  <script src = "slot.js"></script>
+</head>
+<body>
+
+<table>
+  <td><img src = "img/seven.jpg" id = "Photo1" width = "150" height = "150"></td>
+  <td><img src = "img/seven.jpg" id = "Photo2" width = "150" height = "150"></td>
+  <td><img src = "img/seven.jpg" id = "Photo3" width = "150" height = "150"></td>
+</table>
+
+
+  <!--スロットボタンの設定-->
+  <div class = "slot_button">
+    <input type = "button" id = "b1" value = "Stop" disabled = "true">
+    <input type = "button" id = "b2" value = "Stop" disabled = "true">
+    <input type = "button" id = "b3" value = "Stop" disabled = "true">
+  </div>
+
+  <!--スタートボタンの設定-->
+  <input type = "button" id = "start" value = "start">
+
+  <!--持点の設定-->
+  <br>
+  <a>持点  :     </a>
+  <!--持点の初期値50点-->
+  <input type = "text" id = "score" size = "2" value = "50">
+    <a>点</a>
+
+  <p id = result></p>
+
+</body>
+</html>
