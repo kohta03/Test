@@ -1,0 +1,24 @@
+body {
+    margin:0px;
+    padding : 0px;
+    text-align: center;
+}
+#buttons {
+    width: 100%;
+    margin: 10px 0;
+}
+button {
+    width: 130px;
+    height:40px;
+    color:#ffffff;
+    background-color:#337fcc;
+    font-size:20px;
+    border:1px solid #225588;
+    padding:6px 0;
+    border-radius:8px;
+    margin:5px;
+    outline : none;
+}
+#photo {
+    width:90%;
+}
