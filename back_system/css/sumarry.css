@@ -1,0 +1,43 @@
+.content{
+	text-align: center;
+	margin: 2em 0 0 0;
+}
+table {
+	margin: 0 auto;
+}
+.small-table{
+	width: 100%;
+	margin: 0 5em 0 0;
+	border-collapse: collapse;
+	border: 3px #20b2aa solid;
+	text-align: center;
+}
+.small-table td{
+	width: 80px;
+	height: 50px;
+}
+#money {
+	width: 50%;
+	margin: 3em auto 0 auto;
+	border-collapse: collapse;
+	border: 3px #20b2aa solid;
+	text-align: center;
+	border-bottom: 3px #20b2aa solid;
+}
+#money th,
+#money td{
+	width: 100px;
+	height: 60px;
+}
+.top1{
+	background-color: #eee;
+	border-bottom: 3px #20b2aa solid;
+}
+.top2{
+	background-color: #eee;
+	border-right: 3px #20b2aa solid;
+}
+#graphText{
+	font-size: 1.3em;
+}
+/*�O���t�֘A*/

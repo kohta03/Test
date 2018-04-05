@@ -1,0 +1,57 @@
+.header{
+    position: fixed;            /* ヘッダーの固定 */
+    top: 10px;                   /* 位置(上10px) */
+    left: 0px;                  /* 位置(右0px) */
+    width: 100%;                /* 横幅100% */
+    height: 140px;              /* 縦幅140px */
+}
+span{
+	display: block;
+	margin: 0 1.7em 0 0;
+	float: right;
+	width: 50%;
+}
+#date{
+	text-align: right;
+	padding-right: 0.5em;
+}
+#time{
+	font-size: 2em;
+}
+#attendanceArea{
+	margin: 6em 0 0 1.6em;
+}
+table{
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 3px #20b2aa solid
+}
+.nameSpaceTD{
+  width: 12%;
+  height: 3em;
+  white-space: nowrap;
+}
+.nameSpaceL{
+  float:left;
+}
+.nameSpaceR{
+  text-align:right;
+}
+#name,
+th{
+	background-color: #eee;
+}
+#name{
+	border: 2px #20b2aa solid;
+	text-align: center;
+}
+.nameSpaceTD{
+	border-right: 2px #20b2aa solid;
+}
+.schedule{
+	border-bottom: 2px #20b2aa solid;
+}
+button{
+	margin: 0 .3em 0 0;
+}

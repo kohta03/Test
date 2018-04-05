@@ -1,0 +1,28 @@
+body{
+	margin: 0 auto;
+}
+.tabBtn{
+	display: table;
+	width: 100%;
+	margin: -.2em 0 0 0;
+	padding: 0 0 0 0;
+}
+.tabBtn li{
+	display: table-cell;
+	width: 16%;
+	border-right: 1px solid #fff;
+	background-color: #20b2aa;
+	text-align: center;
+	vertical-align: middle;
+}
+.tabBtn li:last-child{
+	border-right: 0;
+}
+.tabBtn li a{
+	display: block;
+	cursor: pointer;
+	padding: 10px 0;
+	color: #fff;
+	transition: background-color .3s;
+	text-decoration: none;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>レジ画面</title>
+		<link rel="stylesheet" type="text/css" href="css/master.css">
+		<link rel="stylesheet" type="text/css" href="css/register.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/register.js"></script>
+		<script>
+         	$(function() {
+				$('a').click(function(ev) {
+					ev.preventDefault();
+					location.href = $(this).attr('href');
+				});
+			});
+			$(window).on('touchmove.noScroll', function(e) {
+				e.preventDefault();
+			});
+
+		</script>
+	</head>
+	<body onload="bodyLoad(0,0);">
+		<!--共通ヘッダのinclude-->		
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>header</title>
+		<link rel = "stylesheet" type = "text/css" href ="./css/header.css">
+	</head>
+	<body>
+		<img src="./images/header.png" width="100%">
+		<ul class = "tabBtn">
+			<li><a href = "http://192.168.20.228:8080/back_system/" target = "_top">TOP</a></li>
+			<li><a href = "http://192.168.20.228:8080/back_system/register" target = "_top">レジ</a></li>
+			<li><a href = "http://192.168.20.228:8080/back_system/attendance" target = "_top">出退勤</a></li>
+			<li><a href = "http://192.168.20.228:8080/back_system/summary" target = "_top">集計</a></li>
+			<li><a href = "http://192.168.20.228:8080/back_system/result" target = "_top">履歴</a></li>
+			<li><a href = "http://192.168.20.228:8080/back_system/config" target = "_top">設定</a></li>
+		</ul>
+	</body>
+</html>
+
+		<div class="body">
+			<form action="/back_system/completion" method="post" class="form1">
+				<div class="bigBox" id="frankBox">
+					<h2>フランクフルト</h2>
+					<div class="frank">
+						<div class="box">
+							<img src="images/frank.jpg" height="200" width="250">
+						</div>
+
+						<div class="box">
+							<img src="images/button2.png" id="decrement1">
+						</div>
+
+						<div class="box">
+							<input type="number" step="1" min="0" max="20" name="frankNum" value="0" id="frank" class="num" pattern="[0-9]" inputmode="numeric" required>
+						</div>
+
+						<div class="box">
+							<img src="images/btn.png" id="increment1">
+						</div>
+
+						<div class="box">
+							<p id="amount1">個</p>
+						</div>
+					</div>
+
+					<h2>チーズ巻き</h2>
+					<div class="cheese">
+						<div class="box">
+							<img src="images/cheese.jpg" height="200" width="250">
+						</div>
+						<div class="box">
+							<img src="images/button2.png" id="decrement2" value="-">
+						</div>
+						<div class="box">
+							<input type="number" step="1" min="0" max="20" name="cheeseNum" value="0" id="cheese" class="num" pattern="[0-9]" inputmode="numeric" required>
+						</div>
+						<div class="box">
+							<img src="images/btn.png" id="increment2" value="+">
+						</div>
+						<div class="box">
+							<p id="amount2">個</p>
+						</div>
+					</div>
+				</div>
+				<div class="bigBox" id="lineBox">
+					<div id="line"></div>
+				</div>
+				<div class="bigBox" id="totalBox">
+					<div class="total">
+						<div class="totalText">
+							<h1>合計金額 : <span id="totalPrice"></span>円</h1>
+							<input type="hidden" name="total" id="total" value="0">
+						</div>
+						<div class="couponSelect">
+							<select name="coupon" class="select" id="coupon">
+								<option value="0" selected>クーポン無し</option>
+								<option value="10" id="s1" disabled="true">10円引き</option>
+								<option value="20" id="s2" disabled="true">20円引き</option>
+								<option value="30" id="s3" disabled="true">30円引き</option>
+								<option value="40" id="s4" disabled="true">40円引き</option>
+								<option value="50" id="s5" disabled="true">50円引き</option>
+								<option value="0" id="sh" disabled="true">半額</option>
+								<option value="0" id="sf" disabled="true">フランクフルト無料</option>
+								<option value="0" id="sc" disabled="true">チーズ巻き無料</option>
+							</select>
+						</div>
+						<div class="sourceCheck">
+							<div class="sorceSelect">
+								<input type="radio" name="source" id="nonesource" value="0" checked><label for="nonesource">ソース2種類</label>
+							</div>
+							<div class="sorceSelect">
+								<input type="radio" name="source" id="2source" value="50"><label for="2source">ソース3種類以上</label>
+							</div>
+						</div>
+						<button type="submit" id="submit">精算</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
