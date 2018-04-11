@@ -1,0 +1,75 @@
+.box{
+  float: left;
+  margin: 0 5em;
+  text-align: center;
+}
+.amount{
+  font-size: 1.2em;
+  text-align: center;
+}
+.money{
+  text-align: center;
+}
+#completionBtn{
+	display: block;
+ 	height: 5em;
+  width: 10.5em;
+  margin: 3em 0 0 5em;
+  font-size: 1.3em;
+  line-height: 37px;
+ 	color: #fff;
+ 	background-color: #20b2aa;
+ 	border:solid 1px #20b2aa;
+ 	-webkit-transition: 0.3s;
+ 	-moz-transition: 0.3s;
+ 	-o-transition: 0.3s;
+ 	-ms-transition: 0.3s;
+ 	transition: 0.3s;
+}
+#back{
+	display: block;
+  height:5em;
+	width: 10.5em;
+  margin: -5em 0 0 25em;
+  font-size: 1.3em;
+  line-height: 37px;
+ 	color: #20b2aa;
+ 	background-color: #fff;
+ 	border:solid 1px #20b2aa;
+ 	-webkit-transition: 0.3s;
+ 	-moz-transition: 0.3s;
+ 	-o-transition: 0.3s;
+ 	-ms-transition: 0.3s;
+ 	transition: 0.3s;
+}
+#btn{
+  padding:10px;
+}
+#dialog_back{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+#dialog_body{
+    position: absolute;
+    border-radius: 6px 6px 6px 6px;
+    margin: 10em 0 0 13.2em;
+    width: 30em;
+    height:10em;
+    background-color: #FFF;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.4);  /* CSS3 */
+    padding:50px;
+}
+#dialogText{
+  font-size: 2em;
+  margin: 0 0 0 3em;
+}
+#closeBtn{
+  height:3em;
+  width: 6em;
+  margin: 2em 0 0 8.5em;
+  font-size: 1.3em;
+}
